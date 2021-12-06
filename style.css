@@ -1,0 +1,90 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: block;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.container {
+    /* background:chartreuse; */
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    background-color: hsl(216, 50%, 16%);
+    width: 280px;
+    height: 460px;
+    border-radius: 3%;
+    box-shadow: 0px 0px 45px hsl(216, 50%, 16%);
+    padding: 25px;
+}
+
+.box_img {
+    height: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box_img img {
+    width: 100%;
+    border-radius: 3%;
+    box-shadow: 0px 0px 20px hsl(215, 32%, 27%);
+    filter: saturate(30%);
+    transition: ease 1s;
+}
+
+.box_img img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: saturate(100%);
+    transform: filte 1s;
+    box-shadow: 0 0 20px hsl(0, 0%, 100%);
+}
+
+.box_text {
+    margin-top: 15px;
+}
+
+.box_text h1 {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.box_text h1:hover {
+    color: hsl(192, 100%, 50%);
+}
+
+.box_text p {
+    font-size: 18px;
+}
+
+.box_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_days, .info_eth {
+    display: flex;
+    align-items: center;
+}
+
+.info_days p, .info_eth p {
+    margin-left: 5px;
+    color: hsl(192, 100%, 50%);
+}
+
+.info_days p {
+    color: hsl(215, 51%, 70%);
+}
